@@ -32,7 +32,6 @@ export default function LoginPage() {
         type: "success",
         content: "Inicio de sesión exitoso",
       });
-      console.log("login", res.data.data);
       router.push("/order");
     } catch (error: any) {
       const msg = error.response?.data?.message || "Error al iniciar sesión";
